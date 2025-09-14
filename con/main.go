@@ -7,14 +7,14 @@ import (
 
 func infite(wg *sync.WaitGroup) {
 	defer wg.Done()
-	for j := 0; j < 5; j++ {
+	for j := 0; j < 100; j++ {
 		fmt.Println("{%v} A", j)
 	}
 }
 
 func infi(wg *sync.WaitGroup) {
 	defer wg.Done()
-	for j := 0; j < 5; j++ {
+	for j := 0; j < 100; j++ {
 		fmt.Println("{%v} B", j)
 	}
 }
